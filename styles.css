@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 15;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Nunito", sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.section {
+  padding: 160px 0;
+}
+
+header .small-info {
+  background-color: #005757;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  color: white;
+}
+
+.small-info .copyright {
+  font-weight: 500;
+  font-family: "Nunito", sans-serif;
+}
+
+.small-info .contact-info a {
+  margin: 0 5px;
+}
+
+.small-info .contact-info a img {
+  width: 30px;
+  height: auto;
+  filter: invert(99%) sepia(100%) saturate(2%) hue-rotate(167deg)
+    brightness(115%) contrast(100%);
+  transition: transform 0.3s ease;
+}
+
+.small-info .contact-info a:hover img {
+  transform: scale(1.1);
+}
+
+.small-info .lang-switcher {
+  display: flex;
+}
+
+.small-info .lang-switcher a {
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.small-info .lang-switcher a img {
+  margin-right: 5px;
+}
+
+.small-info .lang-switcher a img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  box-shadow: 1px 0 8px 0 grey;
+}
+
+.navbar-brand span {
+  position: relative;
+  font-family: "Nunito", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  transition: width 0.3s ease;
+}
+
+.navbar-brand span::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.navbar-brand span:hover::after {
+  width: 100%;
+}
+
+.navbar-brand img {
+  width: 84px;
+  height: auto;
+  margin-right: 14px;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+  transform: scale(1.1);
+}
+
+.navbar .nav-item {
+  padding: 32px 24px;
+}
+
+.navbar-light .nav-link {
+  position: relative;
+  padding: 0 !important;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(48, 48, 48, 1) !important;
+}
+
+.navbar-light .nav-link::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #005757;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: width 0.3s ease;
+}
+
+.navbar-light .nav-link:hover::after {
+  width: 80%;
+}
+
+.navbar .nav-link:hover {
+  color: rgba(48, 48, 48) !important;
+}
+
+.banner {
+  height: 70vh;
+}
+
+.banner .carousel-inner {
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner .img1,
+.banner .img2,
+.banner .img3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+}
+
+.banner .img1 {
+  background-image: url(/images/slide1.jpg);
+}
+
+.banner .img2 {
+  background-image: url(/images/slide2.jpg);
+}
+
+.banner .img3 {
+  background-image: url(/images/slide3.jpg);
+}
+
+.banner .carousel-item div span {
+  background-color: #0057574d;
+  padding: 60px;
+  color: white;
+  font-size: 60px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: italic;
+}
+
+.bg-grey {
+  background-color: rgb(235, 235, 235);
+}
+
+.scrollFix {
+  padding: 80px 0;
+}
+
+.section img {
+  height: 340px;
+  width: auto;
+  object-fit: cover;
+}
+
+.welcome-info h2 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #eca438;
+}
+
+.welcome-info p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.youtube-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url(/images/banner-img1.jpg);
+}
+
+.youtube-video::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #00575769;
+  width: 100%;
+  height: 100%;
+}
+
+.youtube-video iframe {
+  z-index: 1;
+}
+
+.articles-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.articles-info h1 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #eca438;
+  margin-bottom: 60px;
+}
+.articles-info .row .col-lg {
+  display: flex;
+  justify-content: center;
+}
+
+.articles-info .article {
+  width: 450px;
+  height: 650px;
+  background-color: #f3f3f3;
+  position: relative;
+  box-shadow: 1px 0 8px 0 grey;
+}
+
+.articles-info .article-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 24px;
+}
+
+.articles-info .article-desc {
+  padding: 0 40px;
+  position: relative;
+}
+
+.articles-info .article-desc h2 {
+  text-align: center;
+  color: #005757;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.articles-info .article-desc p {
+  font-size: 18px;
+}
+
+.articles-info .article a {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  border-top: 4px solid #005757;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #005757;
+  font-size: 22px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.articles-info .article a:hover {
+  background-color: #005757;
+  color: white;
+}
+
+footer {
+  color: white;
+  padding: 80px 0;
+  background-color: #005757;
+}
+
+footer .logo {
+  display: flex;
+  align-items: center;
+}
+
+footer .logo span {
+  font-family: "Nunito", sans-serif;
+  font-size: 32px;
+}
+
+footer .logo img {
+  width: 100px;
+  height: auto;
+  margin-right: 12px;
+  filter: invert(99%) sepia(100%) saturate(2%) hue-rotate(167deg)
+    brightness(115%) contrast(100%);
+  transition: transform 0.3s ease;
+}
+
+footer .logo:hover img {
+  transform: scale(1.1);
+}
+
+footer h2 {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+footer a {
+  margin-bottom: 10px;
+}
+
+footer .footer-info {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .footer-info a {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+footer .footer-info a svg,
+footer .footer-info a img {
+  margin-right: 7px;
+  filter: invert(29%) sepia(55%) saturate(2832%) hue-rotate(160deg)
+    brightness(91%) contrast(99%);
+}
+
+footer .footer-info a .phone-icon {
+  height: 22px;
+}
+
+footer .footer-info a .mail-icon {
+  height: 18px;
+}
+
+footer .footer-info a .facebook-icon {
+  height: 26px;
+}
+
+footer .footer-info a .inst-icon {
+  height: 26px;
+}
+
+footer .footer-info a .info-icon {
+  height: 26px;
+}
