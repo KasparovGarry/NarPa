@@ -143,8 +143,13 @@ a:hover {
 }
 
 .banner .carousel-item p {
-  font-size: 17px;
-  line-height: 1.7;
+  font-size: 32px;
+}
+
+.banner .carousel-item .row .col:first-child {
+  display: flex;
+  align-items: center;
+  font-style: italic;
 }
 
 .banner .carousel-item img {
@@ -176,7 +181,7 @@ a:hover {
 
 .welcome-info .row {
   width: 100%;
-  padding: 10px 20px;
+  padding: 14px 20px;
   margin-bottom: 20px;
   position: relative;
 }
@@ -195,6 +200,7 @@ a:hover {
 }
 
 .welcome-info .row h2 {
+  margin-bottom: 0;
   transition: color 0.2s ease;
 }
 
@@ -215,18 +221,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  background-image: url(/images/banner-img1.jpg);
-}
-
-.youtube-video::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: #30092669;
-  width: 100%;
-  height: 100%;
+  background-color: #300926;
 }
 
 .youtube-video .row .col-lg:first-child {
