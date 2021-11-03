@@ -33,7 +33,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   padding: 0 30px;
-  border-bottom: 7px solid #300926;
+  box-shadow: 1px 0 8px 0 grey;
 }
 
 .navbar-brand span {
@@ -42,21 +42,6 @@ a:hover {
   font-size: 24px;
   font-weight: 600;
   transition: width 0.3s ease;
-}
-
-.navbar-brand span::after {
-  content: "";
-  width: 0;
-  height: 3px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: black;
-  transition: width 0.3s ease;
-}
-
-.navbar-brand:hover span::after {
-  width: 100%;
 }
 
 .navbar-brand img {
@@ -68,6 +53,43 @@ a:hover {
 
 .navbar-brand:hover img {
   transform: scale(1.1);
+}
+
+.navbar .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.navbar .text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 4px;
+  background-color: #300926;
+}
+
+.navbar .text::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 4px;
+  background-color: #300926;
+}
+
+.navbar .collapse {
+  flex-grow: 0;
 }
 
 .navbar ul {
@@ -143,7 +165,7 @@ a:hover {
 }
 
 .banner .carousel-item p {
-  font-size: 32px;
+  font-size: 26px;
 }
 
 .banner .carousel-item .row .col:first-child {
@@ -199,7 +221,7 @@ a:hover {
   z-index: -1;
 }
 
-.welcome-info .row h2 {
+.welcome-info .row h3 {
   margin-bottom: 0;
   transition: color 0.2s ease;
 }
@@ -213,7 +235,7 @@ a:hover {
   width: 100%;
 }
 
-.welcome-info .row:hover h2 {
+.welcome-info .row:hover h3 {
   color: white;
 }
 
@@ -310,6 +332,11 @@ footer {
   background-color: #300926;
 }
 
+footer .logo-section {
+  display: flex;
+  flex-direction: column;
+}
+
 footer .logo {
   display: flex;
   align-items: center;
@@ -331,6 +358,18 @@ footer .logo img {
 
 footer .logo:hover img {
   transform: scale(1.1);
+}
+
+footer .logo-section .text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7px;
+  margin-left: 7px;
+  font-size: 16px;
+}
+
+footer .logo-section .text span {
+  margin-top: 5px;
 }
 
 footer h2 {
