@@ -39,7 +39,7 @@ a:hover {
 .navbar-brand span {
   position: relative;
   font-family: "Nunito", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   transition: width 0.3s ease;
 }
@@ -60,7 +60,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   padding: 8px 12px;
   position: relative;
@@ -105,7 +105,7 @@ a:hover {
   position: relative;
   padding: 0 !important;
   font-family: "Nunito", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: rgba(48, 48, 48, 1) !important;
 }
@@ -171,7 +171,6 @@ a:hover {
 .banner .carousel-item .row .col:first-child {
   display: flex;
   align-items: center;
-  font-style: italic;
 }
 
 .banner .carousel-item img {
@@ -194,21 +193,48 @@ a:hover {
   object-fit: cover;
 }
 
-.welcome-info h1 {
-  margin-bottom: 20px;
+.welcome-info p {
+  font-size: 20px;
+}
+
+.psychoanalyst-info {
+  background-color: #300926;
+}
+
+.psychoanalyst-info .col-md {
+  color: white;
+  padding: 10px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.psychoanalyst-info .col-md img {
+  width: 105px;
+  height: auto;
+  filter: invert(100%) sepia(4%) saturate(7448%) hue-rotate(300deg)
+    brightness(110%) contrast(101%);
+  margin-bottom: 45px;
+}
+
+.working-info h1 {
+  margin-bottom: 35px;
   text-align: center;
   font-family: "Roboto Condensed", sans-serif;
   color: #eca438;
 }
 
-.welcome-info .row {
+.working-info .row {
   width: 100%;
   padding: 14px 20px;
   margin-bottom: 20px;
   position: relative;
 }
 
-.welcome-info .row::after {
+.working-info .row::after {
   content: "";
   position: absolute;
   left: 0;
@@ -221,21 +247,22 @@ a:hover {
   z-index: -1;
 }
 
-.welcome-info .row h3 {
+.working-info .row h3 {
+  font-size: 20px;
   margin-bottom: 0;
   transition: color 0.2s ease;
 }
 
-.welcome-info .row:hover {
+.working-info .row:hover {
   cursor: pointer;
   color: white;
 }
 
-.welcome-info .row:hover::after {
+.working-info .row:hover::after {
   width: 100%;
 }
 
-.welcome-info .row:hover h3 {
+.working-info .row:hover h3 {
   color: white;
 }
 
@@ -258,29 +285,6 @@ a:hover {
 
 .psychoanalysis-info p {
   font-size: 20px;
-}
-
-.psychoanalysis-info2 {
-  background-color: #300926;
-}
-
-.psychoanalysis-info2 .col-md {
-  color: white;
-  padding: 10px;
-  margin: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-weight: 500;
-  font-size: 18px;
-}
-
-.psychoanalysis-info2 .col-md img {
-  width: 105px;
-  height: auto;
-  filter: invert(100%) sepia(4%) saturate(7448%) hue-rotate(300deg)
-    brightness(110%) contrast(101%);
-  margin-bottom: 45px;
 }
 
 .articles-info {
