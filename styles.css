@@ -197,6 +197,10 @@ a:hover {
   font-size: 20px;
 }
 
+.psychoanalysis-info p {
+  font-size: 20px;
+}
+
 .psychoanalyst-info {
   background-color: #300926;
 }
@@ -281,10 +285,6 @@ a:hover {
 
 .youtube-video iframe {
   z-index: 1;
-}
-
-.psychoanalysis-info p {
-  font-size: 20px;
 }
 
 .articles-info {
