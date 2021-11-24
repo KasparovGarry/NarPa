@@ -458,6 +458,14 @@ footer .footer-info a .info-icon {
     padding: 10px !important;
   }
 
+  .activity-section h1 {
+    font-size: 24px;
+  }
+
+  .activity-section .row h3 {
+    font-size: 16px;
+  }
+
   footer .logo img {
     width: 80px;
   }
