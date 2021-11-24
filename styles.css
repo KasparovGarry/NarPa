@@ -652,3 +652,104 @@ footer .footer-info a .info-icon {
     font-size: 26px;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .navbar-brand img {
+    width: 59px;
+  }
+
+  .navbar-brand span {
+    font-size: 14px;
+  }
+
+  .navbar-light .nav-link {
+    font-size: 13px;
+  }
+
+  .navbar-light .nav-item#appoint-button .nav-link {
+    padding: 10px !important;
+  }
+
+  .banner .carousel-item p {
+    font-size: 10px;
+    margin-left: 10px;
+  }
+
+  .banner .carousel-item img {
+    height: 110px;
+  }
+
+  .psychoanalyst-info h3 {
+    font-size: 10px;
+  }
+
+  .psychoanalyst-info .col-lg img {
+    width: 65px;
+  }
+
+  .psychoanalyst-info .col-lg p {
+    font-size: 12px;
+  }
+
+  .working-info h1 {
+    font-size: 22px;
+  }
+
+  .working-info .row h3 {
+    font-size: 14px;
+  }
+
+  .youtube-video .row .col-lg h2 {
+    font-size: 18px;
+  }
+
+  .youtube-video iframe {
+    height: 169px;
+  }
+
+  .psychoanalysis-info p {
+    font-size: 10px;
+  }
+
+  .section img {
+    height: 220px;
+  }
+
+  .articles-info h1 {
+    font-size: 24px;
+  }
+
+  .articles-info .row .col-lg {
+    padding: 0;
+  }
+
+  .articles-info .article {
+    height: 480px;
+  }
+
+  .articles-info .article-image {
+    height: 125px;
+  }
+
+  .articles-info .article-desc h2 {
+    font-size: 22px;
+  }
+
+  .articles-info .article-desc p {
+    font-size: 12px;
+  }
+
+  .articles-info .article a {
+    height: 45px;
+    font-size: 16px;
+  }
+
+  footer .logo img {
+    width: 80px;
+  }
+
+  footer .logo span,
+  footer h2 {
+    font-size: 22px;
+  }
+}

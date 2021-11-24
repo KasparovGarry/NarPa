@@ -440,3 +440,30 @@ footer .footer-info a .info-icon {
     font-size: 26px;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .navbar-brand img {
+    width: 59px;
+  }
+
+  .navbar-brand span {
+    font-size: 14px;
+  }
+
+  .navbar-light .nav-link {
+    font-size: 13px;
+  }
+
+  .navbar-light .nav-item#appoint-button .nav-link {
+    padding: 10px !important;
+  }
+
+  footer .logo img {
+    width: 80px;
+  }
+
+  footer .logo span,
+  footer h2 {
+    font-size: 22px;
+  }
+}
