@@ -388,7 +388,7 @@ footer .footer-info a .info-icon {
   .navbar .nav-item {
     width: 100%;
     height: 100%;
-    padding: 20px 0;
+    padding: 20px 10px;
   }
 
   .navbar-light .nav-link:hover::after {
