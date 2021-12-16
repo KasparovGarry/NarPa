@@ -450,6 +450,12 @@ footer .footer-info a .info-icon {
 }
 
 @media screen and (max-width: 992px) {
+  .row .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .navbar {
     padding: 20px 30px;
   }
@@ -536,6 +542,10 @@ footer .footer-info a .info-icon {
 
   .navbar-light .nav-link {
     font-size: 13px;
+  }
+
+  .navbar-light .dropdown-item {
+    font-size: 12px;
   }
 
   .navbar-light .nav-item#appoint-button .nav-link {

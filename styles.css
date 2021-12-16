@@ -398,76 +398,6 @@ section .centered {
   object-fit: cover;
 }
 
-.articles-info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-left: 60px;
-  padding-right: 60px;
-}
-
-.articles-info h1 {
-  font-family: "Roboto Condensed", sans-serif;
-  color: #eca438;
-  margin-bottom: 60px;
-}
-.articles-info .row .col-lg {
-  display: flex;
-  justify-content: center;
-}
-
-.articles-info .article {
-  width: 450px;
-  height: 650px;
-  background-color: #f3f3f3;
-  position: relative;
-  box-shadow: 1px 0 8px 0 grey;
-}
-
-.articles-info .article-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  margin-bottom: 24px;
-}
-
-.articles-info .article-desc {
-  padding: 0 40px;
-  position: relative;
-}
-
-.articles-info .article-desc h2 {
-  text-align: center;
-  color: #300926;
-  font-family: "Roboto Condensed", sans-serif;
-}
-
-.articles-info .article-desc p {
-  font-size: 18px;
-}
-
-.articles-info .article a {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 65px;
-  border-top: 4px solid #300926;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #300926;
-  font-size: 22px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.articles-info .article a:hover {
-  background-color: #300926;
-  color: white;
-}
-
 footer {
   color: white;
   padding: 80px 0;
@@ -619,6 +549,12 @@ footer .footer-info a .inst-icon {
 }
 
 @media screen and (max-width: 992px) {
+  .row .col-lg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .navbar {
     padding: 20px 30px;
   }
@@ -714,6 +650,10 @@ footer .footer-info a .inst-icon {
     font-size: 13px;
   }
 
+  .navbar-light .dropdown-item {
+    font-size: 12px;
+  }
+
   .navbar-light .nav-item#appoint-button .nav-link {
     padding: 10px !important;
   }
@@ -749,6 +689,10 @@ footer .footer-info a .inst-icon {
 
   .youtube-section .image img {
     width: 275px;
+  }
+
+  .youtube-section .website span {
+    font-size: 14px;
   }
 
   .psychoanalysis-info p {

@@ -392,6 +392,10 @@ footer .footer-info a .info-icon {
     font-size: 13px;
   }
 
+  .navbar-light .dropdown-item {
+    font-size: 12px;
+  }
+
   .navbar-light .nav-item#appoint-button .nav-link {
     padding: 10px !important;
   }
