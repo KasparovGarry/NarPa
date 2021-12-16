@@ -11,7 +11,6 @@ header {
 }
 
 body {
-  overflow-x: hidden;
   font-family: "Mukta", sans-serif;
 }
 
@@ -137,6 +136,20 @@ p {
   font-size: 18px;
   font-weight: 600;
   color: rgba(48, 48, 48, 1) !important;
+}
+
+.dropdown-toggle::after {
+  border: none;
+}
+
+.dropdown-menu {
+  left: -80px;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #f8f9fa;
+  color: black;
 }
 
 .navbar-light .nav-item#appoint-button {
@@ -299,21 +312,84 @@ section .centered {
   color: white;
 }
 
-.youtube-video {
+.youtube-section {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #300926;
 }
 
-.youtube-video .row .col-lg:first-child {
-  display: flex;
-  align-items: center;
-  color: white;
+.youtube-section .row {
+  margin-bottom: 45px;
 }
 
-.youtube-video iframe {
+.youtube-section .col-lg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.youtube-section h1 {
+  color: white;
+  margin-bottom: 35px;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.youtube-section .youtube-video {
   z-index: 1;
+}
+
+.youtube-video {
+  width: 370px;
+  height: 209px;
+}
+
+.youtube-section .website {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.youtube-section .website span {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.youtube-section .image {
+  position: relative;
+}
+
+.youtube-section .image img {
+  width: 450px;
+  height: auto;
+  object-fit: cover;
+}
+
+.youtube-section .image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.4s ease;
+  background-color: #38383854;
+}
+
+.youtube-section .image .overlay .text {
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.youtube-section .website:hover .image .overlay {
+  opacity: 1;
 }
 
 .psychoanalysis-info img {
@@ -478,10 +554,6 @@ footer .footer-info a .inst-icon {
   height: 26px;
 }
 
-footer .footer-info a .info-icon {
-  height: 26px;
-}
-
 @media screen and (max-width: 768px) {
   .banner .carousel-item p {
     font-size: 15px;
@@ -507,19 +579,8 @@ footer .footer-info a .info-icon {
     font-size: 18px;
   }
 
-  .youtube-video iframe {
-    width: 400px;
-    height: 225px;
-  }
-
   .psychoanalysis-info p {
     font-size: 16px;
-  }
-
-  .articles-info .article {
-    width: 350px;
-    height: 550px;
-    margin-bottom: 25px;
   }
 }
 
@@ -550,17 +611,6 @@ footer .footer-info a .info-icon {
 
   .working-info .row h3 {
     font-size: 18px;
-  }
-
-  .youtube-video .row .col-lg h2 {
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
-
-  .youtube-video iframe {
-    width: 550px;
-    height: 309px;
   }
 
   .psychoanalysis-info p {
@@ -594,30 +644,12 @@ footer .footer-info a .info-icon {
     margin-bottom: 24px;
   }
 
-  .youtube-video .row .col-lg {
-    display: flex;
-    justify-content: center;
-  }
-
-  .youtube-video .row .col-lg h2 {
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 20px;
-  }
-
-  .psychoanalysis-info .col-lg {
-    display: flex;
-    justify-content: center;
-  }
-
   .psychoanalysis-info p {
     margin-bottom: 35px;
   }
 
-  .articles-info .article {
-    width: 350px;
-    height: 550px;
-    margin-bottom: 25px;
+  .youtube-section .col-lg {
+    margin-bottom: 20px;
   }
 
   footer .logo-section {
@@ -652,29 +684,12 @@ footer .footer-info a .info-icon {
     padding: 17px 4px;
   }
 
+  .youtube-section .image img {
+    width: 320px;
+  }
+
   .psychoanalyst-info .col-lg p {
     font-size: 15px;
-  }
-
-  .youtube-video .row .col-lg h2 {
-    font-size: 24px;
-  }
-
-  .youtube-video iframe {
-    width: 450px;
-    height: 254px;
-  }
-
-  .articles-info .article-desc h2 {
-    font-size: 28px;
-  }
-
-  .articles-info .article-desc p {
-    font-size: 16px;
-  }
-
-  .articles-info .article a {
-    font-size: 20px;
   }
 
   footer .logo span {
@@ -732,12 +747,8 @@ footer .footer-info a .info-icon {
     font-size: 14px;
   }
 
-  .youtube-video .row .col-lg h2 {
-    font-size: 18px;
-  }
-
-  .youtube-video iframe {
-    height: 169px;
+  .youtube-section .image img {
+    width: 275px;
   }
 
   .psychoanalysis-info p {
@@ -746,35 +757,6 @@ footer .footer-info a .info-icon {
 
   .psychoanalysis-info img {
     height: 220px;
-  }
-
-  .articles-info h1 {
-    font-size: 24px;
-  }
-
-  .articles-info .row .col-lg {
-    padding: 0;
-  }
-
-  .articles-info .article {
-    height: 480px;
-  }
-
-  .articles-info .article-image {
-    height: 125px;
-  }
-
-  .articles-info .article-desc h2 {
-    font-size: 22px;
-  }
-
-  .articles-info .article-desc p {
-    font-size: 12px;
-  }
-
-  .articles-info .article a {
-    height: 45px;
-    font-size: 16px;
   }
 
   footer .logo img {

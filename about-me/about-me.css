@@ -130,6 +130,20 @@ a:hover {
   padding: 32px 24px;
 }
 
+.dropdown-toggle::after {
+  border: none;
+}
+
+.dropdown-menu {
+  left: -80px;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #f8f9fa;
+  color: black;
+}
+
 .navbar-light .nav-link {
   position: relative;
   padding: 0 !important;

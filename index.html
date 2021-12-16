@@ -69,13 +69,38 @@
             <li class="nav-item">
               <a class="nav-link" href="/about-me/about-me.html">Обо мне</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item dropdown">
               <a
-                class="nav-link disabled"
-                href="/about-psychoanalysis/about-psychoanalysis.html"
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
               >
-                Психоанализ
+                Статьи
               </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/articles/war-article.html">
+                  <u>"Война за право жить."</u>
+                </a>
+                <a class="dropdown-item" href="/articles/article1.html">
+                  "Кризис середины жизни."
+                </a>
+                <a class="dropdown-item" href="/articles/article2.html">
+                  "Поэтапное развитие любви."
+                </a>
+                <a class="dropdown-item" href="/articles/article3.html">
+                  "Межличностные конфликты - что за ними стоит?"
+                </a>
+                <a class="dropdown-item" href="/articles/article4.html">
+                  "Привязанность родом из детства."
+                </a>
+                <a class="dropdown-item" href="/articles/article5.html">
+                  "Зависимости - что за ними скрывается?"
+                </a>
+              </div>
             </li>
             <li class="nav-item" id="appoint-button">
               <a class="nav-link" href="#">Назначить встречу</a>
@@ -221,23 +246,70 @@
         </div>
       </section>
 
-      <section class="section youtube-video">
-        <div class="bg"></div>
+      <section class="section youtube-section">
         <div class="container">
+          <h1>Психоанализ</h1>
           <div class="row">
             <div class="col-lg">
-              <h2>Краткий пересказ понятия Психоанализ Отто Кернбергом.</h2>
+              <iframe
+                class="youtube-video"
+                width="1280"
+                height="720"
+                src="https://www.youtube.com/embed/UOkG8J9OxKs"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen=""
+              ></iframe>
             </div>
             <div class="col-lg">
               <iframe
-                width="640"
-                height="360"
-                src="https://www.youtube.com/embed/UOkG8J9OxKs"
+                class="youtube-video"
+                width="1280"
+                height="720"
+                src="https://www.youtube.com/embed/UwMsBrNCT64"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
               ></iframe>
+            </div>
+            <div class="col-lg">
+              <iframe
+                class="youtube-video"
+                width="1280"
+                height="723"
+                src="https://www.youtube.com/embed/yMSYAww8qD0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <h1>Подробнее о психоанализе вы можете узнать в:</h1>
+          <div class="row">
+            <div class="col-lg">
+              <a class="website" href="https://www.ipa.world">
+                <div class="image">
+                  <img src="images/site-image2.png" alt="IPA" />
+                  <div class="overlay">
+                    <div class="text">www.ipa.world</div>
+                  </div>
+                </div>
+                <span>International Psychoanalytical Association</span>
+              </a>
+            </div>
+            <div class="col-lg">
+              <a class="website" href="http://psychoanalysis-mps.ru">
+                <div class="image">
+                  <img src="images/site-image1.png" alt="MPS" />
+                  <div class="overlay">
+                    <div class="text">www.psychoanalysis-mps.ru</div>
+                  </div>
+                </div>
+                <span>Московское психоаналитическое Общество</span>
+              </a>
             </div>
           </div>
         </div>
@@ -277,7 +349,7 @@
           </div>
           <div class="col-lg footer-info">
             <h2>Связаться:</h2>
-            <a href="tel:+37400000000">
+            <a href="tel:+37491192436">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 18.5 18.5"
@@ -289,7 +361,7 @@
                   data-name="Path 43144"
                 ></path>
               </svg>
-              <span>+374 00 00 00 00</span>
+              <span>+374 91 19 24 36</span>
             </a>
             <a href="mailto:aregak@yandex.ru">
               <svg
@@ -317,33 +389,6 @@
             <a href="/">
               <img src="icons/instagram.png" alt="INST" class="inst-icon" />
               <span>"inst"</span>
-            </a>
-          </div>
-          <div class="col-lg footer-info">
-            <h2>Полезные статьи:</h2>
-            <a href="/articles/war-article.html">
-              <img src="/icons/info-icon.png" alt="i" class="info-icon" />
-              <span><u>"Война за право жить."</u></span>
-            </a>
-            <a href="/articles/article1.html">
-              <img src="/icons/info-icon.png" alt="i" class="info-icon" />
-              <span>"Кризис середины жизни."</span>
-            </a>
-            <a href="/articles/article2.html">
-              <img src="/icons/info-icon.png" alt="i" class="info-icon" />
-              <span>"Поэтапное развитие любви."</span>
-            </a>
-            <a href="/articles/article3.html">
-              <img src="/icons/info-icon.png" alt="i" class="info-icon" />
-              <span>"Межличностные конфликты - что за ними стоит?"</span>
-            </a>
-            <a href="/articles/article4.html">
-              <img src="/icons/info-icon.png" alt="i" class="info-icon" />
-              <span>"Привязанность родом из детства."</span>
-            </a>
-            <a href="/articles/article5.html">
-              <img src="/icons/info-icon.png" alt="i" class="info-icon" />
-              <span>"Зависимости - что за ними скрывается?"</span>
             </a>
           </div>
         </div>
