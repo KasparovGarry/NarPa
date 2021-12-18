@@ -1,7 +1,12 @@
 * {
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  padding: env(safe-area-inset);
 }
 
 header {
@@ -505,7 +510,7 @@ footer .footer-info a .info-icon {
   }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1330px) {
+@media screen and (min-width: 992px) and (max-width: 1390px) {
   .navbar-brand span {
     font-size: 16px;
   }
@@ -516,6 +521,10 @@ footer .footer-info a .info-icon {
 
   .navbar .nav-item {
     text-align: center;
+  }
+
+  .dropdown-menu {
+    left: -180px;
   }
 
   .navbar-light .nav-link {
