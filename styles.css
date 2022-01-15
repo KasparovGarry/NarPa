@@ -436,6 +436,44 @@ footer .logo-section .text span {
   margin-top: 5px;
 }
 
+footer .location-section {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+footer .location-section img {
+  width: 25px;
+  height: auto;
+  margin-right: 8px;
+  filter: invert(99%) sepia(100%) saturate(2%) hue-rotate(167deg)
+    brightness(115%) contrast(100%);
+}
+
+footer .location-section span {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+}
+
+footer .location-section {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+footer .location-section img {
+  width: 25px;
+  height: auto;
+  margin-right: 8px;
+  filter: invert(99%) sepia(100%) saturate(2%) hue-rotate(167deg)
+    brightness(115%) contrast(100%);
+}
+
+footer .location-section span {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+}
+
 footer h2 {
   text-align: center;
   margin: 0;
