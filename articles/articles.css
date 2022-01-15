@@ -290,14 +290,14 @@ footer .footer-info {
 footer .footer-info a {
   display: flex;
   align-items: center;
-  margin-left: 30px;
+  margin-left: 120px;
 }
 
 footer .footer-info a svg,
 footer .footer-info a img {
   margin-right: 7px;
-  filter: invert(8%) sepia(37%) saturate(7145%) hue-rotate(301deg)
-    brightness(96%) contrast(92%);
+  filter: invert(99%) sepia(100%) saturate(2%) hue-rotate(167deg)
+    brightness(115%) contrast(100%);
 }
 
 footer .footer-info a .phone-icon {
